@@ -3,6 +3,10 @@ using System.Security.Cryptography.X509Certificates;
 using Microsoft.VisualBasic;
 
 namespace KilkellyJA6;
+//John Kilkelly
+//350439
+//COP2360
+//Assignment 6: SumPolygon
 
 class Program
 {
@@ -19,7 +23,6 @@ class Program
 
         A6 a6 = new A6();
                 int sum = a6.SumPolygon(sideCount);
-    
                 Console.WriteLine($"The sum of the internal angles is {sum.ToString()}.");
     }
 
