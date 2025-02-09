@@ -13,17 +13,17 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("To calculate the sum of the internal angles of a polygon, enter a number of sides greater than 2.");
-        bool success = int.TryParse(Console.ReadLine(), out int sideCount);
+        bool success = int.TryParse(Console.ReadLine(), out int sideCount); 
     
-        while (!success || sideCount < 3)
+        while (!success || sideCount < 3) //loop to be executed while success is false or sideCount is less than 3
         {
             Console.WriteLine("Input was not valid. Please input the side count as an integer greater than 2.");
             success = int.TryParse(Console.ReadLine(), out sideCount);
         }
 
-        A6 a6 = new A6();
-                int sum = a6.SumPolygon(sideCount);
-                Console.WriteLine($"The sum of the internal angles is {sum.ToString()}.");
+        A6 geometry = new A6();
+                int sum = geometry.SumPolygon(sideCount);
+                Console.WriteLine($"The sum of the internal angles is {sum.ToString()} degrees.");
     }
 
     public class A6
