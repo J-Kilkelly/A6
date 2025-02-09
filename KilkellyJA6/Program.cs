@@ -13,7 +13,7 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("To calculate the sum of the internal angles of a polygon, enter a number of sides greater than 2.");
-        bool success = int.TryParse(Console.ReadLine(), out int sideCount); 
+        bool success = int.TryParse(Console.ReadLine(), out int sideCount); // T/F was user input able to be parsed to integer
     
         while (!success || sideCount < 3) //loop to be executed while success is false or sideCount is less than 3
         {
